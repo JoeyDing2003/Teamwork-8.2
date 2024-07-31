@@ -1,0 +1,1593 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Okomo - Creative Portfolio Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/icon.png">
+
+    <!-- Google font (font-family: 'Open Sans', sans-serif;) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <!-- Google font (font-family: 'Poppins', sans-serif;) -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,900" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Cusom css -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer js -->
+    <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <style>
+        ul {
+            position: relative;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        ul li {
+            width: 120px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .slider {
+            width: 100px;
+            height: 40px;
+            background-color: #5352ed;
+            border-radius: 4px;
+            position: absolute;
+            left: 10px;
+            bottom: 0;
+            z-index: -1;
+            transition: all ease 0.4s;
+        }
+
+        li:nth-child(1):hover~.slider {
+            left: 10px;
+        }
+
+        li:nth-child(2):hover~.slider {
+            left: 128px;
+        }
+
+        li:nth-child(3):hover~.slider {
+            left: 248px;
+        }
+
+        li:nth-child(4):hover~.slider {
+            left: 368px;
+        }
+
+        li:nth-child(5):hover~.slider {
+            left: 488px;
+        }
+    </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+            /* Add relative positioning to parent for slider positioning */
+        }
+
+        ul li {
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            padding: 10px;
+            position: relative;
+            /* Ensure li elements are positioned relative to ul */
+            z-index: 1;
+            /* Ensure li elements are above the slider */
+        }
+
+        .slider {
+            width: 0px;
+            height: 60px;
+            background-color: #5352ed;
+            border-radius: 4px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            transition: all ease 0.4s;
+        }
+
+        .content {
+            margin-top: 80px;
+            /* Adjusted margin to accommodate fixed navbar */
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+	<![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <div class="fakeloader"></div>
+
+    <!-- Main wrapper -->
+    <div class="wrapper imgmenu-wrapper" id="wrapper">
+
+        <!-- Homepage -->
+        <div id="homepage-area" class="homepage">
+
+            <!-- Header -->
+            <header class="header-area">
+                <div class="header-logo">
+                    <h3 style="font:
+					calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script',
+					fantasy;">ANALYSIS NAVIGATOR</h3>
+                </div>
+                <button class="fsmenu-trigger fullscreen-menu-trigger">
+                    <i class="ti-menu-alt"></i>
+                </button>
+            </header>
+            <!--// Header -->
+
+            <!-- Image Menu -->
+            <div class="imgmenu-wrap">
+
+                <!-- Single Menu -->
+                <div class="imgmenu" style="background-image: url(images/imgmenu/imgmenu-about-bg.png);">
+                    <h2 class="imgmenu-title">01.Acceptors VS Rejectors</h2>
+                    <a href="#" data-hashlink-trigger="about-me-area" class="imgmenu-content">
+                        <h2 data-title-overlay=" Acceptors VS Rejectors">01. Acceptors VS Rejectors</h2>
+                        <h5>Comparison between acceptors and rejectors</h5>
+                        <span class="imgmenu-right-arrow">
+                            <img src="images/icons/next-long-arrow.png" alt="next arrow">
+                            <img src="images/icons/next-long-arrow-skyblue.png" alt="next arrow">
+                        </span>
+                    </a>
+                </div>
+                <!--// Single Menu -->
+
+                <!-- Single Menu -->
+                <div class="imgmenu" style="background-image: url(images/imgmenu/imgmenu-work-bg.jpg);">
+                    <h2 class="imgmenu-title">02. the Returnee VS Stayer</h2>
+                    <a href="test.html" data-hashlink-trigger="portfolios-area" class="imgmenu-content">
+                        <h2 data-title-overlay="the Returnee VS Stayer">02. the Returnee VS Stayer</h2>
+                        <h5>Comparison between returnee and stayer in different subjects</h5>
+                        <span class="imgmenu-right-arrow">
+                            <img src="images/icons/next-long-arrow.png" alt="next arrow">
+                            <img src="images/icons/next-long-arrow-skyblue.png" alt="next arrow">
+                        </span>
+                    </a>
+                </div>
+                <!--// Single Menu -->
+
+                <!-- Single Menu -->
+                <div class="imgmenu" style="background-image: url(images/imgmenu/imgmenu-blog-bg.png);">
+                    <h2 class="imgmenu-title">03. Returnee Before VS After</h2>
+                    <a href="#" data-hashlink-trigger="blogs-area" class="imgmenu-content">
+                        <h2 data-title-overlay="Returnee Before VS After">03. Returnee Before VS After</h2>
+                        <h5>Returnees' development before and after their return</h5>
+                        <span class="imgmenu-right-arrow">
+                            <img src="images/icons/next-long-arrow.png" alt="next arrow">
+                            <img src="images/icons/next-long-arrow-skyblue.png" alt="next arrow">
+                        </span>
+                    </a>
+                </div>
+                <!--// Single Menu -->
+
+                <!-- Single Menu -->
+                <div class="imgmenu" style="background-image: url(images/imgmenu/imgmenu-contact-bg.png);">
+                    <h2 class="imgmenu-title">04.Researchers' PhD Country</h2>
+                    <a href="#" data-hashlink-trigger="contact-area" class="imgmenu-content">
+                        <h2 data-title-overlay="Researchers' PhD Country">04. Researchers' PhD Country</h2>
+                        <h5>Researchers' PhD countries with detailed information</h5>
+                        <span class="imgmenu-right-arrow">
+                            <img src="images/icons/next-long-arrow.png" alt="next arrow">
+                            <img src="images/icons/next-long-arrow-skyblue.png" alt="next arrow">
+                        </span>
+                    </a>
+                </div>
+                <!--// Single Menu -->
+
+            </div>
+            <!--// Image Menu -->
+
+            <!-- Fullscreen Header -->
+            <div class="fullscreen-header">
+
+                <!-- Header -->
+                <header class="header-area header-style-2 header-transparent">
+                    <div class="header-logo">
+                        <a href="index-1.html">
+                            <img src="images/logo/logo-3.png" alt="header logo">
+                        </a>
+                    </div>
+                    <button class="back-to-root-button">GO BACK TO HOME<i class="ti-close"></i></button>
+                </header>
+                <!--// Header -->
+
+                <nav class="fsmenu">
+                    <ul>
+                        <li><a class="back-to-root-button" href="#">Home</a></li>
+                        <li><a href="#" data-hashlink-trigger="about-me-area">About</a></li>
+                        <li><a href="#" data-hashlink-trigger="portfolios-area">Work</a></li>
+                        <li><a href="#" data-hashlink-trigger="blogs-area">Blog</a></li>
+                        <li><a href="#" data-hashlink-trigger="contact-area">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <!--// Fullscreen Header -->
+
+        </div>
+        <!--// Homepage -->
+
+        <!-- About Me Area -->
+        <div id="about-me-area" class="imgmenu-single-area cr-section about-me-area">
+
+            <!-- Header -->
+            <header class="header-area header-style-2 header-transparent">
+                <div class="header-logo">
+                    <a href="index-1.html">
+                        <img src="images/logo/logo-2.png" alt="header logo">
+                    </a>
+                </div>
+                <button class="back-to-root-button">GO BACK TO HOME<i class="ti-close"></i></button>
+            </header>
+            <!--// Header -->
+
+            <div class="about-me"></div>
+            <div class="about-me-thumb">
+                <div id="f063d800d9b64d27a8246a9152c77966" class="chart-container"
+                    style="width:1400px; height:500px; flex:left"></div>
+                <script>
+                    var chart_f063d800d9b64d27a8246a9152c77966 = echarts.init(
+                        document.getElementById('f063d800d9b64d27a8246a9152c77966'), 'white', { renderer: 'canvas' });
+                    var option_f063d800d9b64d27a8246a9152c77966 = {
+                        "animation": true,
+                        "animationThreshold": 2000,
+                        "animationDuration": 1000,
+                        "animationEasing": "cubicOut",
+                        "animationDelay": 0,
+                        "animationDurationUpdate": 300,
+                        "animationEasingUpdate": "cubicOut",
+                        "animationDelayUpdate": 0,
+                        "aria": {
+                            "enabled": false
+                        },
+                        "color": [
+                            "#5470c6",
+                            "#91cc75",
+                            "#fac858",
+                            "#ee6666",
+                            "#73c0de",
+                            "#3ba272",
+                            "#fc8452",
+                            "#9a60b4",
+                            "#ea7ccc"
+                        ],
+                        "series": [
+                            {
+                                "type": "bar",
+                                "name": "cohort 1 ",
+                                "legendHoverLink": true,
+                                "data": [
+                                    16,
+                                    14,
+                                    15,
+                                    10,
+                                    7,
+                                    10
+                                ],
+                                "realtimeSort": false,
+                                "showBackground": false,
+                                "stack": "stack1",
+                                "stackStrategy": "samesign",
+                                "cursor": "pointer",
+                                "barMinHeight": 0,
+                                "barCategoryGap": "40%",
+                                "barGap": "0",
+                                "large": false,
+                                "largeThreshold": 400,
+                                "seriesLayoutBy": "column",
+                                "datasetIndex": 0,
+                                "clip": true,
+                                "zlevel": 0,
+                                "z": 2,
+                                "label": {
+                                    "show": true,
+                                    "margin": 8
+                                },
+                                "rippleEffect": {
+                                    "show": true,
+                                    "brushType": "stroke",
+                                    "scale": 2.5,
+                                    "period": 4
+                                }
+                            },
+                            {
+                                "type": "bar",
+                                "name": "cohort 1 ",
+                                "legendHoverLink": true,
+                                "data": [
+                                    2,
+                                    4,
+                                    2,
+                                    1,
+                                    1,
+                                    3
+                                ],
+                                "realtimeSort": false,
+                                "showBackground": false,
+                                "stack": "stack2",
+                                "stackStrategy": "samesign",
+                                "cursor": "pointer",
+                                "barMinHeight": 0,
+                                "barCategoryGap": "40%",
+                                "barGap": "0",
+                                "large": false,
+                                "largeThreshold": 400,
+                                "seriesLayoutBy": "column",
+                                "datasetIndex": 0,
+                                "clip": true,
+                                "zlevel": 0,
+                                "z": 2,
+                                "label": {
+                                    "show": true,
+                                    "margin": 8
+                                },
+                                "rippleEffect": {
+                                    "show": true,
+                                    "brushType": "stroke",
+                                    "scale": 2.5,
+                                    "period": 4
+                                }
+                            },
+                            {
+                                "type": "bar",
+                                "name": "cohort 2 ",
+                                "legendHoverLink": true,
+                                "data": [
+                                    26,
+                                    28,
+                                    18,
+                                    15,
+                                    15,
+                                    9
+                                ],
+                                "realtimeSort": false,
+                                "showBackground": false,
+                                "stack": "stack1",
+                                "stackStrategy": "samesign",
+                                "cursor": "pointer",
+                                "barMinHeight": 0,
+                                "barCategoryGap": "40%",
+                                "barGap": "0",
+                                "large": false,
+                                "largeThreshold": 400,
+                                "seriesLayoutBy": "column",
+                                "datasetIndex": 0,
+                                "clip": true,
+                                "zlevel": 0,
+                                "z": 2,
+                                "label": {
+                                    "show": true,
+                                    "margin": 8
+                                },
+                                "rippleEffect": {
+                                    "show": true,
+                                    "brushType": "stroke",
+                                    "scale": 2.5,
+                                    "period": 4
+                                }
+                            },
+                            {
+                                "type": "bar",
+                                "name": "cohort 2 ",
+                                "legendHoverLink": true,
+                                "data": [
+                                    3,
+                                    8,
+                                    6,
+                                    3,
+                                    6,
+                                    4
+                                ],
+                                "realtimeSort": false,
+                                "showBackground": false,
+                                "stack": "stack2",
+                                "stackStrategy": "samesign",
+                                "cursor": "pointer",
+                                "barMinHeight": 0,
+                                "barCategoryGap": "40%",
+                                "barGap": "0",
+                                "large": false,
+                                "largeThreshold": 400,
+                                "seriesLayoutBy": "column",
+                                "datasetIndex": 0,
+                                "clip": true,
+                                "zlevel": 0,
+                                "z": 2,
+                                "label": {
+                                    "show": true,
+                                    "margin": 8
+                                },
+                                "rippleEffect": {
+                                    "show": true,
+                                    "brushType": "stroke",
+                                    "scale": 2.5,
+                                    "period": 4
+                                }
+                            },
+                            {
+                                "type": "bar",
+                                "name": "cohort 3 ",
+                                "legendHoverLink": true,
+                                "data": [
+                                    15,
+                                    19,
+                                    15,
+                                    7,
+                                    3,
+                                    10
+                                ],
+                                "realtimeSort": false,
+                                "showBackground": false,
+                                "stack": "stack1",
+                                "stackStrategy": "samesign",
+                                "cursor": "pointer",
+                                "barMinHeight": 0,
+                                "barCategoryGap": "40%",
+                                "barGap": "0",
+                                "large": false,
+                                "largeThreshold": 400,
+                                "seriesLayoutBy": "column",
+                                "datasetIndex": 0,
+                                "clip": true,
+                                "zlevel": 0,
+                                "z": 2,
+                                "label": {
+                                    "show": true,
+                                    "margin": 8
+                                },
+                                "rippleEffect": {
+                                    "show": true,
+                                    "brushType": "stroke",
+                                    "scale": 2.5,
+                                    "period": 4
+                                }
+                            },
+                            {
+                                "type": "bar",
+                                "name": "cohort 3 ",
+                                "legendHoverLink": true,
+                                "data": [
+                                    2,
+                                    5,
+                                    1,
+                                    2,
+                                    2,
+                                    4
+                                ],
+                                "realtimeSort": false,
+                                "showBackground": false,
+                                "stack": "stack2",
+                                "stackStrategy": "samesign",
+                                "cursor": "pointer",
+                                "barMinHeight": 0,
+                                "barCategoryGap": "40%",
+                                "barGap": "0",
+                                "large": false,
+                                "largeThreshold": 400,
+                                "seriesLayoutBy": "column",
+                                "datasetIndex": 0,
+                                "clip": true,
+                                "zlevel": 0,
+                                "z": 2,
+                                "label": {
+                                    "show": true,
+                                    "margin": 8
+                                },
+                                "rippleEffect": {
+                                    "show": true,
+                                    "brushType": "stroke",
+                                    "scale": 2.5,
+                                    "period": 4
+                                }
+                            },
+                            {
+                                "type": "bar",
+                                "name": "cohort 4 ",
+                                "legendHoverLink": true,
+                                "data": [
+                                    13,
+                                    17,
+                                    17,
+                                    18,
+                                    7,
+                                    15
+                                ],
+                                "realtimeSort": false,
+                                "showBackground": false,
+                                "stack": "stack1",
+                                "stackStrategy": "samesign",
+                                "cursor": "pointer",
+                                "barMinHeight": 0,
+                                "barCategoryGap": "40%",
+                                "barGap": "0",
+                                "large": false,
+                                "largeThreshold": 400,
+                                "seriesLayoutBy": "column",
+                                "datasetIndex": 0,
+                                "clip": true,
+                                "zlevel": 0,
+                                "z": 2,
+                                "label": {
+                                    "show": true,
+                                    "margin": 8
+                                },
+                                "rippleEffect": {
+                                    "show": true,
+                                    "brushType": "stroke",
+                                    "scale": 2.5,
+                                    "period": 4
+                                }
+                            },
+                            {
+                                "type": "bar",
+                                "name": "cohort 4 ",
+                                "legendHoverLink": true,
+                                "data": [
+                                    1,
+                                    3,
+                                    6,
+                                    0,
+                                    0,
+                                    4
+                                ],
+                                "realtimeSort": false,
+                                "showBackground": false,
+                                "stack": "stack2",
+                                "stackStrategy": "samesign",
+                                "cursor": "pointer",
+                                "barMinHeight": 0,
+                                "barCategoryGap": "40%",
+                                "barGap": "0",
+                                "large": false,
+                                "largeThreshold": 400,
+                                "seriesLayoutBy": "column",
+                                "datasetIndex": 0,
+                                "clip": true,
+                                "zlevel": 0,
+                                "z": 2,
+                                "label": {
+                                    "show": true,
+                                    "margin": 8
+                                },
+                                "rippleEffect": {
+                                    "show": true,
+                                    "brushType": "stroke",
+                                    "scale": 2.5,
+                                    "period": 4
+                                }
+                            }
+                        ],
+                        "legend": [
+                            {
+                                "data": [
+                                    "cohort 1 ",
+                                    "cohort 1 ",
+                                    "cohort 2 ",
+                                    "cohort 2 ",
+                                    "cohort 3 ",
+                                    "cohort 3 ",
+                                    "cohort 4 ",
+                                    "cohort 4 "
+                                ],
+                                "selected": {},
+                                "show": true,
+                                "left": "85%",
+                                "bottom": "69%",
+                                "orient": "vertical",
+                                "padding": 5,
+                                "itemGap": 10,
+                                "itemWidth": 25,
+                                "itemHeight": 14,
+                                "backgroundColor": "transparent",
+                                "borderColor": "#ccc",
+                                "borderRadius": 0,
+                                "pageButtonItemGap": 5,
+                                "pageButtonPosition": "end",
+                                "pageFormatter": "{current}/{total}",
+                                "pageIconColor": "#2f4554",
+                                "pageIconInactiveColor": "#aaa",
+                                "pageIconSize": 15,
+                                "animationDurationUpdate": 800,
+                                "selector": false,
+                                "selectorPosition": "auto",
+                                "selectorItemGap": 7,
+                                "selectorButtonGap": 10
+                            }
+                        ],
+                        "tooltip": {
+                            "show": true,
+                            "trigger": "item",
+                            "triggerOn": "mousemove|click",
+                            "axisPointer": {
+                                "type": "line"
+                            },
+                            "showContent": true,
+                            "alwaysShowContent": false,
+                            "showDelay": 0,
+                            "hideDelay": 100,
+                            "enterable": false,
+                            "confine": false,
+                            "appendToBody": false,
+                            "transitionDuration": 0.4,
+                            "textStyle": {
+                                "fontSize": 14
+                            },
+                            "borderWidth": 0,
+                            "padding": 5,
+                            "order": "seriesAsc"
+                        },
+                        "xAxis": [
+                            {
+                                "name": "DISCIPLINE",
+                                "show": true,
+                                "scale": false,
+                                "nameLocation": "end",
+                                "nameGap": 15,
+                                "nameTextStyle": {
+                                    "fontSize": 15
+                                },
+                                "gridIndex": 0,
+                                "axisLabel": {
+                                    "show": true,
+                                    "rotate": 0,
+                                    "margin": 8,
+                                    "interval": 0,
+                                    "fontSize": 10
+                                },
+                                "inverse": false,
+                                "offset": 0,
+                                "splitNumber": 5,
+                                "minInterval": 0,
+                                "splitLine": {
+                                    "show": true,
+                                    "lineStyle": {
+                                        "show": true,
+                                        "width": 1,
+                                        "opacity": 1,
+                                        "curveness": 0,
+                                        "type": "solid"
+                                    }
+                                },
+                                "data": [
+                                    "PHYSICS AND MATHEMATICS",
+                                    "ENGINEERING AND MATERIALS SCIENCE",
+                                    "LIFE SCIENCE",
+                                    "CHEMISTRY",
+                                    "ENVIRONMENTAL AND EARTH SCIENCE",
+                                    "INFORMATION SCIENCE"
+                                ]
+                            }
+                        ],
+                        "yAxis": [
+                            {
+                                "name": "NUMBER",
+                                "show": true,
+                                "scale": false,
+                                "nameLocation": "end",
+                                "nameGap": 15,
+                                "nameTextStyle": {
+                                    "fontSize": 15
+                                },
+                                "gridIndex": 0,
+                                "inverse": false,
+                                "offset": 0,
+                                "splitNumber": 5,
+                                "minInterval": 0,
+                                "splitLine": {
+                                    "show": true,
+                                    "lineStyle": {
+                                        "show": true,
+                                        "width": 1,
+                                        "opacity": 1,
+                                        "curveness": 0,
+                                        "type": "solid"
+                                    }
+                                }
+                            }
+                        ],
+                        "title": [
+                            {
+                                "show": true,
+                                "text": "Acceptors VS Rejectors",
+                                "target": "blank",
+                                "subtarget": "blank",
+                                "left": "center",
+                                "top": 20,
+                                "padding": 5,
+                                "itemGap": 10,
+                                "textAlign": "auto",
+                                "textVerticalAlign": "auto",
+                                "triggerEvent": false
+                            }
+                        ]
+                    };
+                    chart_f063d800d9b64d27a8246a9152c77966.setOption(option_f063d800d9b64d27a8246a9152c77966);
+                </script>
+
+
+            </div>
+
+            <div class="about-me-content about-me-content-slider-active">
+
+                <!-- About Me About -->
+                <div id="about-me-about" class="about-me-block about-me-about">
+                    <h2>接受者 vs 拒绝者</h2>
+                    <h4>要素解读</h4>
+                    <p>
+                        <b>X轴代表不同学科，每一个学科对应2条堆叠柱状图，左边是YTT计划接受者，右侧是YTT计划拒绝者。<br>
+                            Cohort 1-4 表示YTT计划不同执行批次一到四。
+                        </b>
+                    </p>
+                    <h4>可视化结果解读</h4>
+                    <p>
+                        <b>
+                            1. YTT计划在“材料科学与工程”领域的接受者和拒绝者的总数都是最多的，从而发放的邀请也是最多的。<br>
+
+                            2. YTT计划在第二批次和第四批次发放的邀请容量相对较多，第一批次和第三批次发放邀请的容量是相对较少。<br>
+                            3. 6个学科，4个批次中，YTT接受者人数均大于拒绝者人数。化学和环境与地球科学领域中的第四批次YTT邀请结果中没有出现拒绝的案例。
+
+                        </b>
+                    </p>
+                </div>
+                <!--// About Me About -->
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <!--// About Me Area -->
+
+    <!-- Portfolios Area -->
+    <div id="portfolios-area" class="imgmenu-single-area cr-section portfolios-area">
+        <!-- Header -->
+        <header class="header-area header-style-2">
+            <div class="header-logo">
+                <a href="index-1.html">
+
+                </a>
+            </div>
+            <button class="back-to-root-button">GO BACK TO HOME<i class="ti-close"></i></button>
+        </header>
+        <!--// Header -->
+
+
+
+        <nav>
+            <ul>
+                <li><a href="3D Scatter/CHEMISTRY.html">CHE.</a></li>
+                <li><a href="3D Scatter/ENGINEERING_AND_MATERIALS_SCIENCE.html">ENG.& M.SCI</a></li>
+                <li><a href="3D Scatter/ENVIRONMENTAL AND EARTH SCIENCE.html">ENV. & E.SCI</a></li>
+                <li><a href="3D Scatter/INFORMATION SCIENCE.html">INFO.SCI</a></li>
+                <li><a href="3D Scatter/LIFE SCIENCE.html">LIFE.SCI</a></li>
+                <li><a href="3D Scatter/PHYSICS AND MATHEMATICS.html">PHY. & MATH</a></li>
+                <div class="slider"></div>
+            </ul>
+        </nav>
+        <div style="margin: auto; text-align: center; ">
+            <h3>归国前 vs 归国后</h3>
+            <h4>要素解读</h4>
+            <p>
+                <b>
+                    x, y, z轴分别代表接受截止到YTT邀请发放年份，该研究人员在其专业领域不同排名区间的论文发表的年平均数量。</br>
+                    avg _ Q12 _ num：排名前50%的期刊</br>
+                    avg _ Q1 _ num：排名前25%的期刊</br>
+                    avg _ top10 _ num：排名前10的期刊</br>
+                    方形代表该研究人员从全球排名200的大学取得博士学位，圆形代表从非排名前200大学取得博士学位。</br>
+                    空心代表该研究人员在YTT发放邀请年份时未取得海外PI，实心代表其已在该年份取得海外PI。</br>
+                    红色代表YTT拒绝者，蓝色代表YTT接受者。</br>
+
+                </b>
+            </p>
+            <h4>可视化结果解读</h4>
+            <p>
+                <b>
+
+                    6个领域中均出现其情况：YTT接受者中的大多数（50%或者高于50%）都未在海外取得PI，YTT拒绝者中几乎都拥有海外PI。</br>
+                    6个领域中，无论是拒绝者还是接受者，研究人员大多数都在 top 200 的海外大学取得博士学位。</br>
+                    各个领域中在高排名期刊发文量较多的研究人员，大多数都选择了接受YTT计划。</br>
+                </b>
+            </p>
+
+
+        </div>
+        <div>
+
+            <img src="ex.png">
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <!--// Portfolios Area -->
+
+    <!-- Blogs Area -->
+    <div id="blogs-area" class="imgmenu-single-area cr-section blogs-area">
+
+        <!-- Header -->
+        <header class="header-area header-style-2">
+            <div class="header-logo">
+                <a href="index-1.html">
+                    <img src="images/logo/logo-1.png" alt="header logo">
+                </a>
+            </div>
+            <button class="back-to-root-button">GO BACK TO HOME<i class="ti-close"></i></button>
+        </header>
+        <!--// Header -->
+
+        <div class="about-me">
+            <div class="about-me-thumb">
+                <div id="73de219f1c5845e8abbd37fcfd8f1923" class="chart-container"
+                    style="width:800px; height:500px; flex:left"></div>
+                <script>
+                    var chart_73de219f1c5845e8abbd37fcfd8f1923 = echarts.init(
+                        document.getElementById('73de219f1c5845e8abbd37fcfd8f1923'), 'white', { renderer: 'canvas' });
+                    var option_73de219f1c5845e8abbd37fcfd8f1923 = {
+                        "animation": true,
+                        "animationThreshold": 2000,
+                        "animationDuration": 1000,
+                        "animationEasing": "cubicOut",
+                        "animationDelay": 0,
+                        "animationDurationUpdate": 300,
+                        "animationEasingUpdate": "cubicOut",
+                        "animationDelayUpdate": 0,
+                        "aria": {
+                            "enabled": false
+                        },
+                        "color": [
+                            "#5470c6",
+                            "#91cc75",
+                            "#fac858",
+                            "#ee6666",
+                            "#73c0de",
+                            "#3ba272",
+                            "#fc8452",
+                            "#9a60b4",
+                            "#ea7ccc"
+                        ],
+                        "series": [
+                            {
+                                "type": "boxplot",
+                                "name": "num_of_pub",
+                                "legendHoverLink": true,
+                                "hoverAnimation": true,
+                                "boxWidth": [
+                                    7,
+                                    50
+                                ],
+                                "selectedMode": false,
+                                "data": [
+                                    [
+                                        0.0,
+                                        1.0555555555,
+                                        1.857142857,
+                                        3.0,
+                                        19.0
+                                    ],
+                                    [
+                                        0.125,
+                                        2.285714286,
+                                        4.0,
+                                        6.142857143,
+                                        97.0
+                                    ],
+                                    [
+                                        0.0,
+                                        0.5,
+                                        0.8,
+                                        1.333333333,
+                                        8.0
+                                    ],
+                                    [
+                                        0.0,
+                                        0.125,
+                                        0.285714286,
+                                        0.571428571,
+                                        3.833333333
+                                    ],
+                                    [
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.166666667,
+                                        4.333333333
+                                    ],
+                                    [
+                                        0.0,
+                                        0.571428571,
+                                        1.142857143,
+                                        2.285714286,
+                                        21.14285714
+                                    ]
+                                ],
+                                "label": {
+                                    "show": true,
+                                    "margin": 8
+                                },
+                                "markPoint": {
+                                    "label": {
+                                        "show": true,
+                                        "position": "inside",
+                                        "color": "#fff",
+                                        "margin": 8
+                                    }
+                                },
+                                "markLine": {
+                                    "silent": false,
+                                    "precision": 2,
+                                    "label": {
+                                        "show": true,
+                                        "margin": 8
+                                    }
+                                },
+                                "zlevel": 0,
+                                "z": 2,
+                                "tooltip": {
+                                    "show": true,
+                                    "trigger": "item",
+                                    "triggerOn": "mousemove|click",
+                                    "axisPointer": {
+                                        "type": "line"
+                                    },
+                                    "showContent": true,
+                                    "alwaysShowContent": false,
+                                    "showDelay": 0,
+                                    "hideDelay": 100,
+                                    "enterable": false,
+                                    "confine": false,
+                                    "appendToBody": false,
+                                    "transitionDuration": 0.4,
+                                    "formatter": function (param) { return ['Category ' + param.name + ': ', 'upper: ' + param.data[4], 'Q1: ' + param.data[3], 'median: ' + param.data[2], 'Q3: ' + param.data[1], 'lower: ' + param.data[0]].join('<br/>') },
+                                    "textStyle": {
+                                        "fontSize": 14
+                                    },
+                                    "borderWidth": 0,
+                                    "padding": 5,
+                                    "order": "seriesAsc"
+                                }
+                            },
+                            {
+                                "type": "boxplot",
+                                "name": "Q12_num",
+                                "legendHoverLink": true,
+                                "hoverAnimation": true,
+                                "boxWidth": [
+                                    7,
+                                    50
+                                ],
+                                "selectedMode": false,
+                                "data": [
+                                    [
+                                        0.0,
+                                        1.0,
+                                        1.666666667,
+                                        3.0,
+                                        19.0
+                                    ],
+                                    [
+                                        0.0,
+                                        1.857142857,
+                                        3.5,
+                                        5.666666667,
+                                        95.85714286
+                                    ],
+                                    [
+                                        0.0,
+                                        0.5,
+                                        0.8,
+                                        1.25,
+                                        8.0
+                                    ],
+                                    [
+                                        0.0,
+                                        0.125,
+                                        0.285714286,
+                                        0.5,
+                                        3.333333333
+                                    ],
+                                    [
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.11805555549999999,
+                                        3.666666667
+                                    ],
+                                    [
+                                        0.0,
+                                        0.428571429,
+                                        1.0,
+                                        2.142857143,
+                                        14.85714286
+                                    ]
+                                ],
+                                "label": {
+                                    "show": true,
+                                    "margin": 8
+                                },
+                                "markPoint": {
+                                    "label": {
+                                        "show": true,
+                                        "position": "inside",
+                                        "color": "#fff",
+                                        "margin": 8
+                                    }
+                                },
+                                "markLine": {
+                                    "silent": false,
+                                    "precision": 2,
+                                    "label": {
+                                        "show": true,
+                                        "margin": 8
+                                    }
+                                },
+                                "zlevel": 0,
+                                "z": 2,
+                                "tooltip": {
+                                    "show": true,
+                                    "trigger": "item",
+                                    "triggerOn": "mousemove|click",
+                                    "axisPointer": {
+                                        "type": "line"
+                                    },
+                                    "showContent": true,
+                                    "alwaysShowContent": false,
+                                    "showDelay": 0,
+                                    "hideDelay": 100,
+                                    "enterable": false,
+                                    "confine": false,
+                                    "appendToBody": false,
+                                    "transitionDuration": 0.4,
+                                    "formatter": function (param) { return ['Category ' + param.name + ': ', 'upper: ' + param.data[4], 'Q1: ' + param.data[3], 'median: ' + param.data[2], 'Q3: ' + param.data[1], 'lower: ' + param.data[0]].join('<br/>') },
+                                    "textStyle": {
+                                        "fontSize": 14
+                                    },
+                                    "borderWidth": 0,
+                                    "padding": 5,
+                                    "order": "seriesAsc"
+                                }
+                            },
+                            {
+                                "type": "boxplot",
+                                "name": "Q1_num",
+                                "legendHoverLink": true,
+                                "hoverAnimation": true,
+                                "boxWidth": [
+                                    7,
+                                    50
+                                ],
+                                "selectedMode": false,
+                                "data": [
+                                    [
+                                        0.0,
+                                        0.8,
+                                        1.5,
+                                        2.55,
+                                        14.0
+                                    ],
+                                    [
+                                        0.0,
+                                        1.428571429,
+                                        2.625,
+                                        4.714285714,
+                                        87.42857143
+                                    ],
+                                    [
+                                        0.0,
+                                        0.333333333,
+                                        0.666666667,
+                                        1.0,
+                                        6.0
+                                    ],
+                                    [
+                                        0.0,
+                                        0.0,
+                                        0.166666667,
+                                        0.428571429,
+                                        2.666666667
+                                    ],
+                                    [
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        2.666666667
+                                    ],
+                                    [
+                                        0.0,
+                                        0.333333333,
+                                        0.75,
+                                        1.5,
+                                        11.83333333
+                                    ]
+                                ],
+                                "label": {
+                                    "show": true,
+                                    "margin": 8
+                                },
+                                "markPoint": {
+                                    "label": {
+                                        "show": true,
+                                        "position": "inside",
+                                        "color": "#fff",
+                                        "margin": 8
+                                    }
+                                },
+                                "markLine": {
+                                    "silent": false,
+                                    "precision": 2,
+                                    "label": {
+                                        "show": true,
+                                        "margin": 8
+                                    }
+                                },
+                                "zlevel": 0,
+                                "z": 2,
+                                "tooltip": {
+                                    "show": true,
+                                    "trigger": "item",
+                                    "triggerOn": "mousemove|click",
+                                    "axisPointer": {
+                                        "type": "line"
+                                    },
+                                    "showContent": true,
+                                    "alwaysShowContent": false,
+                                    "showDelay": 0,
+                                    "hideDelay": 100,
+                                    "enterable": false,
+                                    "confine": false,
+                                    "appendToBody": false,
+                                    "transitionDuration": 0.4,
+                                    "formatter": function (param) { return ['Category ' + param.name + ': ', 'upper: ' + param.data[4], 'Q1: ' + param.data[3], 'median: ' + param.data[2], 'Q3: ' + param.data[1], 'lower: ' + param.data[0]].join('<br/>') },
+                                    "textStyle": {
+                                        "fontSize": 14
+                                    },
+                                    "borderWidth": 0,
+                                    "padding": 5,
+                                    "order": "seriesAsc"
+                                }
+                            },
+                            {
+                                "type": "boxplot",
+                                "name": "top10_num",
+                                "legendHoverLink": true,
+                                "hoverAnimation": true,
+                                "boxWidth": [
+                                    7,
+                                    50
+                                ],
+                                "selectedMode": false,
+                                "data": [
+                                    [
+                                        0.0,
+                                        0.4,
+                                        1.0,
+                                        1.666666667,
+                                        9.5
+                                    ],
+                                    [
+                                        0.0,
+                                        0.714285714,
+                                        1.555555556,
+                                        2.833333333,
+                                        22.14285714
+                                    ],
+                                    [
+                                        0.0,
+                                        0.142857143,
+                                        0.4,
+                                        0.75,
+                                        3.0
+                                    ],
+                                    [
+                                        0.0,
+                                        0.0,
+                                        0.142857143,
+                                        0.285714286,
+                                        1.5
+                                    ],
+                                    [
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        0.0,
+                                        1.0
+                                    ],
+                                    [
+                                        0.0,
+                                        0.125,
+                                        0.375,
+                                        0.875,
+                                        8.166666667
+                                    ]
+                                ],
+                                "label": {
+                                    "show": true,
+                                    "margin": 8
+                                },
+                                "markPoint": {
+                                    "label": {
+                                        "show": true,
+                                        "position": "inside",
+                                        "color": "#fff",
+                                        "margin": 8
+                                    }
+                                },
+                                "markLine": {
+                                    "silent": false,
+                                    "precision": 2,
+                                    "label": {
+                                        "show": true,
+                                        "margin": 8
+                                    }
+                                },
+                                "zlevel": 0,
+                                "z": 2,
+                                "tooltip": {
+                                    "show": true,
+                                    "trigger": "item",
+                                    "triggerOn": "mousemove|click",
+                                    "axisPointer": {
+                                        "type": "line"
+                                    },
+                                    "showContent": true,
+                                    "alwaysShowContent": false,
+                                    "showDelay": 0,
+                                    "hideDelay": 100,
+                                    "enterable": false,
+                                    "confine": false,
+                                    "appendToBody": false,
+                                    "transitionDuration": 0.4,
+                                    "formatter": function (param) { return ['Category ' + param.name + ': ', 'upper: ' + param.data[4], 'Q1: ' + param.data[3], 'median: ' + param.data[2], 'Q3: ' + param.data[1], 'lower: ' + param.data[0]].join('<br/>') },
+                                    "textStyle": {
+                                        "fontSize": 14
+                                    },
+                                    "borderWidth": 0,
+                                    "padding": 5,
+                                    "order": "seriesAsc"
+                                }
+                            }
+                        ],
+                        "legend": [
+                            {
+                                "data": [
+                                    "num_of_pub",
+                                    "Q12_num",
+                                    "Q1_num",
+                                    "top10_num"
+                                ],
+                                "selected": {},
+                                "show": true,
+                                "right": "9%",
+                                "top": "5%",
+                                "padding": 5,
+                                "itemGap": 10,
+                                "itemWidth": 25,
+                                "itemHeight": 14,
+                                "backgroundColor": "transparent",
+                                "borderColor": "#ccc",
+                                "borderRadius": 0,
+                                "pageButtonItemGap": 5,
+                                "pageButtonPosition": "end",
+                                "pageFormatter": "{current}/{total}",
+                                "pageIconColor": "#2f4554",
+                                "pageIconInactiveColor": "#aaa",
+                                "pageIconSize": 15,
+                                "animationDurationUpdate": 800,
+                                "selector": false,
+                                "selectorPosition": "auto",
+                                "selectorItemGap": 7,
+                                "selectorButtonGap": 10
+                            }
+                        ],
+                        "tooltip": {
+                            "show": true,
+                            "trigger": "item",
+                            "triggerOn": "mousemove|click",
+                            "axisPointer": {
+                                "type": "shadow"
+                            },
+                            "showContent": true,
+                            "alwaysShowContent": false,
+                            "showDelay": 0,
+                            "hideDelay": 100,
+                            "enterable": false,
+                            "confine": false,
+                            "appendToBody": false,
+                            "transitionDuration": 0.4,
+                            "textStyle": {
+                                "fontSize": 14
+                            },
+                            "borderWidth": 0,
+                            "padding": 5,
+                            "order": "seriesAsc"
+                        },
+                        "xAxis": [
+                            {
+                                "show": true,
+                                "scale": false,
+                                "nameLocation": "end",
+                                "nameGap": 30,
+                                "gridIndex": 0,
+                                "axisLabel": {
+                                    "show": true,
+                                    "margin": 8,
+                                    "formatter": "expr {value}"
+                                },
+                                "inverse": false,
+                                "offset": 0,
+                                "splitNumber": 5,
+                                "boundaryGap": true,
+                                "minInterval": 0,
+                                "splitLine": {
+                                    "show": false,
+                                    "lineStyle": {
+                                        "show": true,
+                                        "width": 1,
+                                        "opacity": 1,
+                                        "curveness": 0,
+                                        "type": "solid"
+                                    }
+                                },
+                                "splitArea": {
+                                    "show": true,
+                                    "areaStyle": {
+                                        "opacity": 1
+                                    }
+                                },
+                                "data": [
+                                    "before",
+                                    "post",
+                                    "before FA",
+                                    "post FA",
+                                    "before LA",
+                                    "post LA"
+                                ]
+                            }
+                        ],
+                        "yAxis": [
+                            {
+                                "type": "value",
+                                "show": true,
+                                "scale": false,
+                                "nameLocation": "end",
+                                "nameGap": 15,
+                                "gridIndex": 0,
+                                "inverse": false,
+                                "offset": 0,
+                                "splitNumber": 5,
+                                "min": 0,
+                                "max": 6.5,
+                                "minInterval": 0,
+                                "splitLine": {
+                                    "show": true,
+                                    "lineStyle": {
+                                        "show": true,
+                                        "width": 1,
+                                        "opacity": 1,
+                                        "curveness": 0,
+                                        "type": "solid"
+                                    }
+                                },
+                                "splitArea": {
+                                    "show": false,
+                                    "areaStyle": {
+                                        "opacity": 0
+                                    }
+                                }
+                            }
+                        ],
+                        "title": [
+                            {
+                                "show": true,
+                                "text": "Before VS After",
+                                "target": "blank",
+                                "subtarget": "blank",
+                                "left": "center",
+                                "padding": 5,
+                                "itemGap": 10,
+                                "textAlign": "auto",
+                                "textVerticalAlign": "auto",
+                                "triggerEvent": false
+                            }
+                        ],
+                        "dataZoom": [
+                            {
+                                "show": true,
+                                "type": "inside",
+                                "showDetail": true,
+                                "showDataShadow": true,
+                                "realtime": true,
+                                "start": 0,
+                                "end": 20,
+                                "orient": "horizontal",
+                                "zoomLock": false,
+                                "filterMode": "filter",
+                                "disabled": false,
+                                "zoomOnMouseWheel": true,
+                                "moveOnMouseMove": true,
+                                "moveOnMouseWheel": true,
+                                "preventDefaultMouseMove": true
+                            },
+                            {
+                                "show": true,
+                                "type": "slider",
+                                "showDetail": true,
+                                "showDataShadow": true,
+                                "realtime": true,
+                                "start": 20,
+                                "end": 80,
+                                "orient": "horizontal",
+                                "xAxisIndex": 0,
+                                "zoomLock": false,
+                                "filterMode": "filter"
+                            }
+                        ]
+                    };
+                    chart_73de219f1c5845e8abbd37fcfd8f1923.setOption(option_73de219f1c5845e8abbd37fcfd8f1923);
+                </script>
+            </div>
+
+            <div class="about-me-content about-me-content-slider-active">
+
+                <!-- About Me About -->
+                <div id="about-me-about" class="about-me-block about-me-about" data-title="about" style="width: 100;">
+                    <h3>归国前 vs 归国后</h3>
+                    <h4>要素解读</h4>
+                    <p>
+                        <b>before: 归国前每位研究人员每年发表论文的平均数</br>
+                            after: 归国后位研究人员每年发表论文的平均数</br>
+                            before FA: 归国前每位研究人员每年以第一作者发表论文的平均数</br>
+                            after FA: 归国后每位研究人员每年以第一作者发表论文的平均数</br>
+                            before LA: 归国前每位研究人员每年以通讯作者发表论文的平均数</br>
+                            after LA: 归国后每位研究人员每年以通讯作者发表论文的平均数</br>
+                            num _ of _ pub: 所有发表论文的数量</br>
+                            Q12_num: 在专业领域前50%期刊的发文数量</br>
+                            Q1_num: 在专业领域前25%期刊的发文数量</br>
+                            Top10_num: 在专业领域前10期刊的发文数量</br>
+
+                        </b>
+                    </p>
+                    <h4>可视化结果解读</h4>
+                    <p>
+                        <b>
+                            所有期刊类别平均的发文量以及以第一作者身份的发文量在回国以后出现明显上升，但是通讯作者身份发表论文数量在回国后下降。此外，在回国前，研究人员第一作者身份发文数量高于通讯作者；回国后，研究人员通讯作者身份发文数量高于第一作者。并且在归国前，所有研究人员均未出现以通讯作者身份在前25%期刊发表论文的情况。</br>说明：研究人员在归国之后主要呈现由项目主要执行者向项目总体负责人的转变。
+                        </b>
+                    </p>
+                </div>
+                <!--// About Me About -->
+
+
+                <!--// About Me Vision -->
+
+            </div>
+        </div>
+
+    </div>
+    <!--// About Me Area -->
+
+
+    <!-- Contact Area -->
+    <div id="contact-area" class="imgmenu-single-area cr-section contact-area">
+
+        <!-- Header -->
+        <header class="header-area header-style-2">
+            <div class="header-logo">
+                <a href="index-1.html">
+                    <img src="images/logo/logo-1.png" alt="header logo">
+                </a>
+            </div>
+            <button class="back-to-root-button">GO BACK TO HOME<i class="ti-close"></i></button>
+        </header>
+        <!--// Header -->
+
+        <div class="about-me">
+            <div class="about-me-thumb">
+                <a href="PhD Map2.html">
+                    <img src="images/about/about-me-thumb.jpg" alt="About Me Thumb">
+                </a>
+            </div>
+
+            <div class="about-me-content about-me-content-slider-active">
+
+                <!-- About Me About -->
+                <div id="about-me-about" class="about-me-block about-me-about" data-title="about">
+                    <h2>研究人员博士就读国家</h2>
+
+                    <p>
+                        <b>
+                            YTT计划前四批的申请者中，总共721名符合要求。获得博士学位的人才大多集中在美国（577人），其次则是香港（41人），然后是加拿大（27人）。
+                            在美国获得博士学位的人数，占总数的80%以上。这表明美国在高等教育和博士培养方面具有显著的吸引力和实力。美国拥有更好的教育资源、研究机会和资助，这使其成为中国学术界人才的首选目的地。
+                            </br>
+                            <b>
+
+                                </br>
+
+                                <b>
+                                    点击具体国家，还可以看到更详细的信息，如拒绝者/接受者的数量，还有男女性别比例，学科等。在提交申请前三个国家的人才中：
+                                    </br>
+                                    <b>美国的接受者与拒绝者的比例是231:346，其中最多的生命科学专业有141人。</br>
+                                        <b>香港地区的接受者与拒绝者的比例是15:26，其中最多的生命科学专业有12人。</br>
+                                            <b>加拿大的接受者与拒绝者的比例是16:11，其中最多的环境与地球科学专业有9人。</br>
+                                                <b>
+
+                                                    </br>
+
+                                                    <b>
+                                                        我们发现，仅有美国和香港地区出现了拒绝者人数大于接受者的情况。这可能与这些地区的经济发展水平、职业机会、生活质量或其他个人因素有关。加拿大的接受者与拒绝者比例接近，德国、瑞典、法国、日本、新西兰的数据显示所有调查的海归人才都接受了回国。这反映了这些国家留学人员对回国发展的积极态度。
+                                                        </br>
+                </div>
+                <!--// About Me About -->
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <!--// About Me Area -->
+    </div>
+    <!-- //Main wrapper -->
+
+    <!-- JS Files -->
+    <script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/plyr.min.js"></script>
+    <script src="js/ajax-mail.js"></script>
+    <script src="js/active.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
